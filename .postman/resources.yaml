@@ -1,0 +1,15 @@
+# Use this workspace to collaborate
+workspace:
+  id: a25d03b2-56a9-4f74-86e7-49161cf675c1
+
+localResources:
+  collections:
+    - ../Task Management API
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../Task Management API: a1b2c3d4-e5f6-7890-abcd-1234567890ab
+    ../postman/collections/Task Management API Copy: 813ae600-efae-41e7-8432-d8c20f4317c1
+    ../postman/collections/Task Management API Copy 2: 122e96da-cb2e-4682-b935-fd62a02ed579

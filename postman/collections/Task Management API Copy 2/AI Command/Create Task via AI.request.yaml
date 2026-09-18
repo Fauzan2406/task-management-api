@@ -1,0 +1,35 @@
+$kind: http-request
+description: |-
+  StartFragment
+
+  ```
+  {
+
+   ```
+
+  ```
+    "prompt": "Tolong buatkan task baru di project ID 1 dengan judul 'Fix Login Bug', description 'Fix authentication issue', assign ke user ID 3 dengan priority high."
+
+   ```
+
+  ```
+  }
+
+   ```
+
+  EndFragment
+url: "{{base_url}}/ai/command"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "prompt": "Tolong buatkan task baru di project ID 1 dengan judul 'Fix Login Bug', description 'Fix authentication issue', assign ke user ID 3 dengan priority high."
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 1000

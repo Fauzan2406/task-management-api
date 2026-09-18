@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{base_url}}/projects/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Website Development - Updated",
+      "description": "Updated description for development project"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 4000

@@ -1,0 +1,5 @@
+$kind: collection
+description: Postman collection for Task Management Backend REST API with Auth, RBAC, Projects, Tasks, and Gemini AI Command Integration.
+variables:
+  base_url: http://localhost:3333
+  token: ""

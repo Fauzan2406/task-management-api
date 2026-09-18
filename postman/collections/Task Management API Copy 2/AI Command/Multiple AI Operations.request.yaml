@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base_url}}/ai/command"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "prompt": "Tolong buatkan task baru di project ID 1 dengan judul 'Fix Login Bug', assign ke user ID 3. Terus sekalian ubah status task ID 5 jadi 'done'."
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 4000

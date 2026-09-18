@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{base_url}}/projects"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Website Development V2",
+      "description": "Development of corporate website version 2"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 1000

@@ -1,0 +1,17 @@
+{
+  "typescript": true,
+  "commands": [
+    "@adonisjs/core/commands",
+    "@adonisjs/lucid/commands"
+  ],
+  "providers": [
+    "@adonisjs/core/providers/app_provider",
+    "@adonisjs/core/providers/hash_provider",
+    "@adonisjs/cors/cors_provider",
+    "@adonisjs/lucid/database_provider"
+  ],
+  "preloads": [
+    "#start/routes",
+    "#start/kernel"
+  ]
+}
